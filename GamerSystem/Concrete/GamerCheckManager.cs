@@ -13,7 +13,14 @@ namespace GamerSystem.Concrete
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {
-            return true;
+            if (gamer.DateOfBirth.Year == 2002 && gamer.FirstName == "Emin" && gamer.LastName == "Tatar" && gamer.NationalityId == "123456789")
+            {     
+                return true;
+            }
+            else
+            {
+                return false;
+            }   
         }
     }
 }
